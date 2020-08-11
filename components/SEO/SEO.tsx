@@ -2,8 +2,8 @@ import * as React from 'react';
 import Head from 'next/head';
 
 interface SEOProps {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
 }
 
 const SEO: React.FC<SEOProps> = ({ title, description }: SEOProps) => {
