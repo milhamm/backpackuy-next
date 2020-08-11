@@ -29,6 +29,11 @@ const SEO: React.FC<SEOProps> = ({ title, description }: SEOProps) => {
         content={templateDescription}
         key='og:description'
       />
+      <meta property='og:image' content='https://i.imgur.com/IrN3nkJ.png' />
+      <meta property='og:image:width' content='1920' />
+      <meta property='og:image:height' content='1080' />
+      <meta property='og:type' content='website' />
+
       <meta property='twitter:title' content={templateTitle} />
       <meta property='twitter:description' content={templateDescription} />
     </Head>

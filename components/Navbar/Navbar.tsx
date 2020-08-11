@@ -2,8 +2,22 @@ import * as React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
 import Container from 'components/Container';
-import { routes } from './routes';
-import { radius, colors } from 'utils/variables';
+import { radius, colors, breakpoints } from 'utils/variables';
+
+const routes = [
+  {
+    name: 'Features',
+    links: '/features',
+  },
+  {
+    name: 'About Us',
+    links: '/about',
+  },
+  {
+    name: 'Feedback',
+    links: '/feedback',
+  },
+];
 
 const Wrapper = styled.div`
   position: absolute;
@@ -28,6 +42,10 @@ const NavContent = styled.ul`
   display: flex;
   flex-direction: row;
   align-items: center;
+  @media (max-width: ${breakpoints.lg}) {
+    flex-direction: column;
+    display: none;
+  }
 `;
 
 const NavItems = styled.li`

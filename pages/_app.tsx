@@ -2,11 +2,11 @@ import * as React from 'react';
 import type { AppProps } from 'next/app';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import Navbar from 'components/Navbar';
+import SEOAll from 'components/SEO/SEOAll';
 
 const theme = {};
 
 const GlobalStyle = createGlobalStyle`
-  
   body, * {
     font-family: 'Nunito Sans', sans-serif;
     margin 0;
@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
 function MyApp({ Component, pageProps }: AppProps): React.ReactNode {
   return (
     <React.Fragment>
+      <SEOAll />
       <ThemeProvider theme={theme}>
         <Navbar />
         <Component {...pageProps} />
