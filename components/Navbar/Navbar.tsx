@@ -57,7 +57,7 @@ const NavItems = styled.li`
   }
 `;
 
-const Root = () => {
+const Root: React.FC = () => {
   return (
     <Wrapper>
       <Container>
