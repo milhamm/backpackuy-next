@@ -10,7 +10,8 @@ const SEO: React.FC<SEOProps> = ({ title, description }: SEOProps) => {
   const defaultTitle = 'Backpackuy - Gateway to Indonesia Tour';
   const templateTitle = title ? `${title} | ${defaultTitle}` : defaultTitle;
 
-  const defaultDescription = 'Backpackuy Descrption';
+  const defaultDescription =
+    'Venture to the beauty of Indonesia with Backpackuy, a web application based travel assistant. It offers an itinerary planner, recommended places all over Indonesia, and estimates travel expenses based on your budget. You can also customize the itinerary that suits your liking and book a travel agency that will suit your plan.';
   const templateDescription = description
     ? `${description} | ${defaultDescription}`
     : defaultDescription;
