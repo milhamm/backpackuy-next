@@ -88,7 +88,9 @@ const Root: React.FC = () => {
           <NavContent>
             {routes.map((route) => (
               <NavItems key={route.links}>
-                <Link href={route.links}>{route.name}</Link>
+                <Link href={route.links}>
+                  <a>{route.name}</a>
+                </Link>
               </NavItems>
             ))}
           </NavContent>

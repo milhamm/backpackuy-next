@@ -40,4 +40,4 @@ const SEO: React.FC<SEOProps> = ({ title, description }: SEOProps) => {
   );
 };
 
-export default SEO;
+export { SEO };

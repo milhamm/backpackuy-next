@@ -2,7 +2,7 @@ import * as React from 'react';
 import type { AppProps } from 'next/app';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import Navbar from 'components/Navbar';
-import SEOAll from 'components/SEO/SEOAll';
+import { SEOAll } from 'components/SEO/SEOAll';
 
 const theme = {};
 
