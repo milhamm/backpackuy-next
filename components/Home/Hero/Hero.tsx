@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Container from 'components/Container';
 import Button from 'components/Button';
 import { radius, breakpoints } from 'utils/variables';
+import { useAmp } from 'next/amp';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -71,6 +72,7 @@ const ImageFrame = styled.div`
 `;
 
 const Hero: React.FC = () => {
+  const isAmp = useAmp();
   return (
     <Wrapper>
       <Container display='flex'>
@@ -84,7 +86,11 @@ const Hero: React.FC = () => {
         </Left>
         <Right>
           <ImageFrame>
-            <img src='/images/bromo.jpg' alt='' />
+            {isAmp ? (
+              <amp-img src='/images/bromo.jpg' alt='Bromo' />
+            ) : (
+              <img src='/images/bromo.jpg' alt='Bromo' />
+            )}
           </ImageFrame>
         </Right>
       </Container>
