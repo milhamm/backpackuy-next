@@ -11,7 +11,7 @@ const SEO: React.FC<SEOProps> = ({ title, description }: SEOProps) => {
   const templateTitle = title ? `${title} | ${defaultTitle}` : defaultTitle;
 
   const defaultDescription =
-    'Venture to the beauty of Indonesia with Backpackuy, a web application based travel assistant. It offers an itinerary planner, recommended places all over Indonesia, and estimates travel expenses based on your budget. You can also customize the itinerary that suits your liking and book a travel agency that will suit your plan.';
+    'Venture to the beauty of Indonesia with Backpackuy, a web application based travel assistant. It offers an itinerary planner, recommended places all over Indonesia, and estimates travel expenses based on your budget.';
   const templateDescription = description
     ? `${description} | ${defaultDescription}`
     : defaultDescription;
@@ -30,9 +30,9 @@ const SEO: React.FC<SEOProps> = ({ title, description }: SEOProps) => {
         content={templateDescription}
         key='og:description'
       />
-      <meta property='og:image' content='https://i.imgur.com/IrN3nkJ.png' />
-      <meta property='og:image:width' content='1920' />
-      <meta property='og:image:height' content='1080' />
+      <meta property='og:image' content='https://i.imgur.com/ItIhIM8.png' />
+      <meta property='og:image:width' content='1200' />
+      <meta property='og:image:height' content='600' />
       <meta property='og:type' content='website' />
 
       <meta property='twitter:title' content={templateTitle} />
