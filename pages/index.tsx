@@ -2,7 +2,7 @@ import React from 'react';
 import { Hero } from 'components/Home';
 import { SEO } from 'components/SEO';
 
-export const config = { amp: 'hybrid' };
+export const config = { amp: true };
 
 const Home: React.FC = () => {
   return (

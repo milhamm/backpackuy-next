@@ -69,8 +69,8 @@ const NavItems = styled.li`
   &:hover {
     background-color: white;
     transition: all 0.4s;
-    a{
-      color ${colors.primary}
+    a {
+      color: ${colors.primary};
     }
   }
 `;
@@ -82,7 +82,12 @@ const Root: React.FC = () => {
         <Navbar>
           <Link href='/'>
             <Logo>
-              <img src='/logo/logo.svg' alt='' />
+              <amp-img
+                src='/logo/logo.svg'
+                alt='Backpackuy Logo'
+                width='171'
+                height='50'
+              />
             </Logo>
           </Link>
           <NavContent>

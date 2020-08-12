@@ -65,9 +65,8 @@ const ImageFrame = styled.div`
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
   overflow: hidden;
-  img {
-    height: 100%;
-    object-fit: contain;
+  amp-img img {
+    object-fit: cover;
   }
 `;
 
@@ -86,11 +85,11 @@ const Hero: React.FC = () => {
         </Left>
         <Right>
           <ImageFrame>
-            {isAmp ? (
-              <amp-img src='/images/bromo.jpg' alt='Bromo' />
-            ) : (
-              <img src='/images/bromo.jpg' alt='Bromo' />
-            )}
+            <amp-img
+              src='/images/bromo.jpg'
+              alt='Bromo'
+              layout='fill'
+            ></amp-img>
           </ImageFrame>
         </Right>
       </Container>
