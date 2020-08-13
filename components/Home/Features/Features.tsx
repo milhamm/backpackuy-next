@@ -99,6 +99,8 @@ const Features: React.FC = () => {
             src='/logo/icon.svg'
             alt='Backpackuy Icon'
             layout='intrinsic'
+            width='128'
+            height='128'
           />
           <Title>
             Introducing <strong>Backpackuy</strong>
