@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import Navbar from 'components/Navbar';
 import { SEOAll } from 'components/SEO/SEOAll';
+import { colors } from 'utils/variables';
 
 const theme = {};
 

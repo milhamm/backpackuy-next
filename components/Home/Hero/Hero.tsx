@@ -89,6 +89,7 @@ const Hero: React.FC = () => {
               src='/images/bromo.jpg'
               alt='Bromo'
               layout='fill'
+              lightbox
             ></amp-img>
           </ImageFrame>
         </Right>

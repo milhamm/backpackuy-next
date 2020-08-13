@@ -24,19 +24,20 @@ const SEO: React.FC<SEOProps> = ({ title, description }: SEOProps) => {
         content={templateDescription}
         key='description'
       />
-      <meta property='og:title' content={templateTitle} key='title' />
+      <meta name='og:title' content={templateTitle} key='title' />
       <meta
-        property='og:description'
+        name='og:description'
         content={templateDescription}
         key='og:description'
       />
-      <meta property='og:image' content='https://i.imgur.com/ItIhIM8.png' />
-      <meta property='og:image:width' content='1200' />
-      <meta property='og:image:height' content='600' />
-      <meta property='og:type' content='website' />
+      <meta name='og:image' content='https://i.imgur.com/ItIhIM8.png' />
+      <meta name='og:image:width' content='1200' />
+      <meta name='og:image:height' content='600' />
+      <meta name='og:type' content='website' />
 
-      <meta property='twitter:title' content={templateTitle} />
-      <meta property='twitter:description' content={templateDescription} />
+      <meta name='twitter:title' content={templateTitle} />
+      <meta name='twitter:description' content={templateDescription} />
+      <meta name='twitter:card' content='summary_large_image' />
     </Head>
   );
 };
