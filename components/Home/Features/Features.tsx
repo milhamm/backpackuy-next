@@ -3,8 +3,10 @@ import styled, { css } from 'styled-components';
 import { radius, colors, breakpoints } from 'utils/variables';
 import Container from 'components/Container';
 import { features } from './variables';
+import { Ratio } from 'components/Ratio';
 
 const Base = styled.div`
+  position: relative;
   min-height: 576px;
   padding: 32px 104px;
   background: linear-gradient(
@@ -90,11 +92,32 @@ const FeatureDescription = styled.p`
   color: ${colors.black01};
 `;
 
+const Graphic = styled.div`
+  position: absolute;
+  top: 0;
+  left: -32px;
+  @media (max-width: ${breakpoints.sm}) {
+    amp-img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+`;
+
 const Features: React.FC = () => {
   return (
     <section id='features'>
       <Container>
         <Base>
+          <Graphic>
+            <Ratio>
+              <amp-img
+                src='/graphics/two.svg'
+                alt='Graphics One'
+                layout='fill'
+              />
+            </Ratio>
+          </Graphic>
           <amp-img
             src='/logo/icon.svg'
             alt='Backpackuy Icon'
